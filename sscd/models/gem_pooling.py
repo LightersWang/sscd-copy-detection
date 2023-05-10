@@ -29,4 +29,4 @@ class GlobalGeMPool2d(nn.Module):
         x = x.reshape(N, C, H * W)  # Combine spatial dimensions
         mean = x.clamp(min=1e-6).pow(self.pooling_param).mean(dim=2)
         r = 1.0 / self.pooling_param
-        return mean.pow(r)
+        return mean.pow(r)  # [B, C]

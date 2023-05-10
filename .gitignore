@@ -4,3 +4,6 @@
 __pycache__
 *.swp
 .DS_Store
+polyps_data
+playground.ipynb
+lora_biomedclip.ipynb
